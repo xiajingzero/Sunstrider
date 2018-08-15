@@ -1,4 +1,4 @@
-package com.xiajingzero.test;
+package com.xiajingzero.thread;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
