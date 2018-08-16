@@ -2,6 +2,7 @@ package com.xiajingzero.enumDemo;
 
 /**
  * Created by xiajing on 2018-8-16.
+ *
  */
 public enum DayEnum {
     ONE(DayType.SHAO),TWO(DayType.SHAO),Three(DayType.SHAO),FOUR(DayType.SHAO),FIVE(DayType.SHAO),
