@@ -14,6 +14,7 @@ public class CountDownLatchDemo {
         public void run(){
             System.out.println(currentThread().getName());
             latch.countDown();
+            System.out.println(currentThread().getName());
         }
     }
 
