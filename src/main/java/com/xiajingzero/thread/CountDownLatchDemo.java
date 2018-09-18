@@ -21,14 +21,6 @@ public class CountDownLatchDemo {
         for (int i = 0; i < 5; i++) {
             new Thread(new JobThread()).start();
         }
-        new Thread(() -> {
-            try {
-                latch.await();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            System.out.println("inner thread");
-        }).start();
         latch.await();
         TimeUnit.MILLISECONDS.sleep(1);
         System.out.println("main");
