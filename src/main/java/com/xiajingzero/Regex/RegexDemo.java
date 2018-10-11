@@ -32,4 +32,10 @@ public class RegexDemo {
             System.out.println(matcher.group());
         }
     }
+
+    @Test
+    public void test_a(){
+        String url = "请点击<a href='http://www.baidu.com'>百度</a>进行查看";
+        System.out.println(url.replaceAll("</?a.*?>", ""));
+    }
 }
